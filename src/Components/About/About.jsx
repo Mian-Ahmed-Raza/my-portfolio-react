@@ -8,7 +8,7 @@ const About = () => {
 
   return (
 
-    <div className={styles.about}>
+    <div id='about' className={styles.about}>
 
         <div className={styles.aboutTitle}>
 

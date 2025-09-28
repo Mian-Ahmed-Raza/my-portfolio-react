@@ -25,3 +25,20 @@
 .navContact:hover{
     transform: scale(1.05);
 }
+
+.navMenu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navMenu li img{
+    display: flex;
+    margin: auto;
+}
+
+.anchorLink{
+    text-decoration: none;
+    color: white;
+}

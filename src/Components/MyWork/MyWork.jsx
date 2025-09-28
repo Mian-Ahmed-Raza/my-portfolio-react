@@ -8,7 +8,7 @@ const MyWork = () => {
 
   return (
     
-    <div className={styles.myWork}>
+    <div id='work' className={styles.myWork}>
 
         <div className={styles.myworkTitle}>
 

@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './Hero.module.css'
 import profilePic from '../../Assets/profile_img.png'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Hero = () => {
 return (
-    <div className={styles.hero}>
+    <div id='home' className={styles.hero}>
 
             <img src={profilePic} alt="profile" width={300} height={300} />
 
@@ -14,7 +15,7 @@ return (
 
             <div className={styles.heroAction}>
 
-                <div className={styles.heroConnect}>Connect with me</div>
+                <div className={styles.heroConnect}><AnchorLink className={styles.anchorLink} offset={50} href='#contact'>Connect with me</AnchorLink></div>
 
                 <div className={styles.heroResume}>My Resume</div>
 
