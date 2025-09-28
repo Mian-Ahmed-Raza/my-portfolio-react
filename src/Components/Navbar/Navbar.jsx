@@ -7,7 +7,7 @@ export default function Navbar() {
 
     <div className={styles.navbar}>
 
-        <img src={logo} alt="" />
+        <img src={logo} alt="" width={150} />
 
         <ul className={styles.navMenu}>
 

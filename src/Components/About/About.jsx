@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './About.module.css'
 import theme_pattern from '../../Assets/theme_pattern.svg'
-import profilePic from '../../Assets/about_profile.svg'
+import profilePic from '../../Assets/about_profile.png'
 
 const About = () => {
 
@@ -22,7 +22,7 @@ const About = () => {
 
             <div className={styles.aboutLeft}>
 
-                <img src={profilePic} alt="Profile" />
+                <img src={profilePic} alt="Profile" width={300} height={400} />
 
             </div>
 

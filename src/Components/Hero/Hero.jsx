@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from './Hero.module.css'
-import profilePic from '../../Assets/profile_img.svg'
+import profilePic from '../../Assets/profile_img.png'
 
 const Hero = () => {
 return (
     <div className={styles.hero}>
 
-            <img src={profilePic} alt="profile" />
+            <img src={profilePic} alt="profile" width={300} height={300} />
 
             <h1><span>I'm Ahmed Raza,</span> Frontend Developer based in Pakistan</h1>
 
