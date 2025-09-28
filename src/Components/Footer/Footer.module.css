@@ -78,7 +78,12 @@
 
     .footerTop{
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
+    }
+
+    .footerTopLeft p{
+        color: #646262;
+        font-size: 18px;
     }
 
     .footerTopRight{
@@ -87,8 +92,16 @@
         gap: 20px;
     }
 
+    .footerEmailInput{
+        padding: 15px 30px;
+    }
+
     .footerTopRight input{
         width: 200px;
+    }
+
+    .footerSubscribe{
+        padding: 15px 30px;
     }
 
     .footerBottom{
@@ -96,5 +109,22 @@
         flex-direction: column-reverse;
         margin-bottom: 50px;
     }
+
+    .footerBottomLeft{
+        color: #646262;
+        font-size: 14px;
+        align-self: center;
+    }
+
+    .footerBottomRight{
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footerBottomRight p{
+        font-size: 14px;
+    }
+
+
 
 }

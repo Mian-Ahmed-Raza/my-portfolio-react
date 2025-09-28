@@ -97,7 +97,7 @@
     }
 
     .heroConnect{
-        padding: 10px 15px !important;
+        padding: 15px 15px !important;
         border-radius: 40px;
         font-size: 18px;
         
@@ -105,7 +105,7 @@
     }
 
     .heroResume{
-        padding: 10px 15px !important;
+        padding: 15px 25px !important;
         border-radius: 40px;
         font-size: 18px;
     }
