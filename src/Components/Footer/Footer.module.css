@@ -73,12 +73,22 @@
 @media(max-width:768px){
 
     .footer{
-        margin: 50px 70px;
+        margin: 50px 40px;
     }
 
     .footerTop{
         flex-direction: column;
         gap: 50px;
+    }
+
+    .footerTopRight{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .footerTopRight input{
+        width: 200px;
     }
 
     .footerBottom{

@@ -83,7 +83,7 @@
     .services{
         align-items: start;
         gap: 70px;
-        margin: 20px 70px;
+        margin: 20px 40px;
     }
 
     .servicesTitle h1{
@@ -99,7 +99,7 @@
     .servicesFormat{
         gap: 20px;
         padding: 32px;
-
+        width: auto
     }
 
     .servicesFormat h2{
@@ -118,7 +118,7 @@
     }
 
     .servicesContainer{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 
