@@ -113,9 +113,13 @@
 @media(max-width:768px){
 
     .about{
-        gap: 80px;
+        gap: 30px;
         margin: 50px 40px;
         align-items: start;
+    }
+
+    .aboutTitle{
+        align-self: center;
     }
 
     .aboutTitle h1{
@@ -137,8 +141,12 @@
     }
 
     .aboutPara{
-        font-size: 18px;
+        font-size: 18px !important;
         line-height: 32px;
+    }
+
+    .aboutRight{
+        gap: 30px;
     }
 
     .aboutSkill{
@@ -156,6 +164,7 @@
 
     .aboutAchievements{
         justify-content: space-between;
+        margin-bottom: 50px;
     }
 
     .aboutAchievement{

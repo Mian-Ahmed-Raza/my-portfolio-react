@@ -82,8 +82,12 @@
 
     .services{
         align-items: start;
-        gap: 70px;
+        gap: 30px;
         margin: 20px 40px;
+    }
+
+    .servicesTitle{
+        align-self: center;
     }
 
     .servicesTitle h1{
