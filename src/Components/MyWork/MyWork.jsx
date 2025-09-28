@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './MyWork.module.css'
-import theme_pattern from '../../Assets/theme_pattern.svg'
-import mywork_data from '../../Assets/mywork_data'
-import arrow_icon from '../../Assets/arrow_icon.svg'
+import theme_pattern from '../../assets/theme_pattern.svg'
+import mywork_data from '../../assets/mywork_data'
+import arrow_icon from '../../assets/arrow_icon.svg'
 
 const MyWork = () => {
 
