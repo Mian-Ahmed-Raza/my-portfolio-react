@@ -1,8 +1,8 @@
 import React from 'react'
 import styles from './Services.module.css'
-import theme_pattern from '../../Assets/theme_pattern.svg'
+import theme_pattern from '../../assets/theme_pattern.svg'
 import Services_Data from '../../assets/services_data'
-import arrow_icon from '../../Assets/arrow_icon.svg'
+import arrow_icon from '../../assets/arrow_icon.svg'
 
 const Services = () => {
 
