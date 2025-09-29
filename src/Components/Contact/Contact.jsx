@@ -40,7 +40,7 @@ const Contact = () => {
 
                         <div className={styles.contactDetail}>
                             <img src={call_icon} alt="call icon" />
-                            <p>+1234567890</p>
+                            <p>+923247932617</p>
                         </div>
 
                         <div className={styles.contactDetail}>

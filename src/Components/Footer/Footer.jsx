@@ -35,7 +35,7 @@ const Footer = () => {
 
             <div className={styles.footerBottom}>
 
-                <p className={styles.footerBottomLeft}>&copy; 2023 Mian Ahmed. All rights reserved.</p>
+                <p className={styles.footerBottomLeft}>&copy; {new Date().getFullYear()} Mian Ahmed. All rights reserved.</p>
 
                 <div className={styles.footerBottomRight}>
 
