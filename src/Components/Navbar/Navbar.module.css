@@ -57,6 +57,10 @@
         margin: 0 20px;
     }
 
+    .navbar img:first-child{
+        width: 100px;
+    }
+
     .navContact{
         display: none;
     }
