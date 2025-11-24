@@ -1,33 +1,33 @@
 const Services_Data = [
     {
         s_no:"01",
-        s_name:"Web design",
-        s_desc:"Building and designing websites for businesses and individuals."
+        s_name:"Full Stack Development",
+        s_desc:"Building complete web applications from database to deployment."
     },
     {
         s_no:"02",
-        s_name:"Graphics design",
-        s_desc:"Creating visual content using typography, imagery, and color."
+        s_name:"API Development",
+        s_desc:"Creating robust RESTful and GraphQL APIs for seamless integration."
     },
     {
         s_no:"03",
-        s_name:"Social media",
-        s_desc:"Managing and growing your online presence on social platforms."
+        s_name:"Database Design",
+        s_desc:"Architecting scalable database solutions using SQL and NoSQL."
     },
     {
         s_no:"04",
-        s_name:"Photo editing",
-        s_desc:"Enhancing and manipulating images to achieve desired results."
+        s_name:"Cloud Deployment",
+        s_desc:"Deploying applications on AWS, Azure, and other cloud platforms."
     },
     {
         s_no:"05",
-        s_name:"Digital marketing",
-        s_desc:"Promoting brands through digital channels and strategies."
+        s_name:"DevOps & CI/CD",
+        s_desc:"Setting up automated pipelines and containerized environments."
     },
     {
         s_no:"06",
-        s_name:"Video editing",
-        s_desc:"Creating and editing video content for various platforms."
+        s_name:"Performance Optimization",
+        s_desc:"Optimizing application speed, scalability, and user experience."
     },
 ]
  

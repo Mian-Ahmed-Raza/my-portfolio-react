@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Footer.module.css'
-import footer_logo from '../../assets/logo.png'
+import footer_logo from '../../assets/logo_professional.svg'
 import user_icon from '../../assets/user_icon.svg'
 
 const Footer = () => {
@@ -35,7 +35,7 @@ const Footer = () => {
 
             <div className={styles.footerBottom}>
 
-                <p className={styles.footerBottomLeft}>&copy; {new Date().getFullYear()} Mian Ahmed. All rights reserved.</p>
+                <p className={styles.footerBottomLeft}>&copy; {new Date().getFullYear()} Carry Williams. All rights reserved.</p>
 
                 <div className={styles.footerBottomRight}>
 

@@ -9,9 +9,9 @@ return (
 
             <img src={profilePic} alt="profile" width={300} height={300} />
 
-            <h1><span>I'm Ahmed Raza,</span> Frontend Developer based in Pakistan</h1>
+            <h1><span>I'm Carry Williams,</span> Full Stack Developer based in Pakistan</h1>
 
-            <p>Passionate about building interactive and responsive web applications using modern technologies.</p>
+            <p>Passionate about building scalable full-stack applications with modern technologies, from database to deployment.</p>
 
             <div className={styles.heroAction}>
 

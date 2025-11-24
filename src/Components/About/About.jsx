@@ -30,31 +30,36 @@ const About = () => {
 
                 <div className={styles.aboutPara}>
 
-                    <p>Hi, I'm a passionate web developer with a knack for creating dynamic and responsive web applications. My journey in web development started a few years ago, and since then, I've been honing my skills in various technologies.</p>
-                    <p>I'm particularly skilled in JavaScript, React, and Node.js, and I love working on projects that challenge me to think outside the box.</p>
+                    <p>Hi, I'm a passionate full stack developer specializing in building robust, scalable applications from front to back. My journey in web development started a few years ago, and since then, I've been mastering both client-side and server-side technologies.</p>
+                    <p>I excel in modern JavaScript frameworks, backend APIs, database design, and cloud deployment. I love architecting complete solutions that solve real-world problems efficiently.</p>
 
                 </div>
 
                 <div className={styles.aboutSkills}>
 
                     <div className={styles.aboutSkill}>
-                        <p>HTML & CSS</p>
+                        <p>React & Next.js</p>
+                        <hr style={{ width: '90%' }} />
+                    </div>
+
+                    <div className={styles.aboutSkill}>
+                        <p>Node.js & Express</p>
+                        <hr style={{ width: '85%' }} />
+                    </div>
+
+                    <div className={styles.aboutSkill}>
+                        <p>MongoDB & PostgreSQL</p>
                         <hr style={{ width: '80%' }} />
                     </div>
 
                     <div className={styles.aboutSkill}>
-                        <p>React JS</p>
+                        <p>AWS & Docker</p> 
+                        <hr style={{ width: '75%' }} />
+                    </div>
+
+                    <div className={styles.aboutSkill}>
+                        <p>TypeScript & GraphQL</p> 
                         <hr style={{ width: '70%' }} />
-                    </div>
-
-                    <div className={styles.aboutSkill}>
-                        <p>JavaScript</p>
-                        <hr style={{ width: '80%' }} />
-                    </div>
-
-                    <div className={styles.aboutSkill}>
-                        <p>Node JS</p> 
-                        <hr style={{ width: '50%' }} />
                     </div>
 
                 </div>

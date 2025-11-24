@@ -1,0 +1,25 @@
+<svg width="300" height="80" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background badge -->
+  <rect x="5" y="10" width="60" height="60" rx="12" fill="url(#gradient1)" opacity="0.9"/>
+  
+  <!-- Initials -->
+  <text x="35" y="52" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">CW</text>
+  
+  <!-- Name -->
+  <text x="75" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    Carry Williams
+  </text>
+  
+  <!-- Tagline -->
+  <text x="75" y="56" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#d8d8d8">
+    Full Stack Developer
+  </text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#df8908;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b415ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
