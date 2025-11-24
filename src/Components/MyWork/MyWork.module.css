@@ -63,11 +63,22 @@
     transition: .6s;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) and (min-width:481px){
+    .myWork{
+        margin: 50px 70px;
+    }
+
+    .myworkContainer{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media(max-width:480px){
 
     .myWork{
         gap: 50px;
-        margin: 50px 40px;
+        margin: 50px 30px;
         align-items: start;
     }
 
@@ -83,7 +94,7 @@
     }
 
     .myworkContainer{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 30px;
     }
 

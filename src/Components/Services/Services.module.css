@@ -78,12 +78,27 @@
     transition: 0.4s;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) and (min-width:481px){
+    .services{
+        margin: 50px 70px;
+    }
+
+    .servicesContainer{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .servicesFormat{
+        padding: 40px;
+    }
+}
+
+@media(max-width:480px){
 
     .services{
         align-items: start;
         gap: 30px;
-        margin: 20px 40px;
+        margin: 20px 30px;
     }
 
     .servicesTitle{

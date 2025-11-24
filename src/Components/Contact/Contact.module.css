@@ -88,6 +88,7 @@
     color: #a0a0a0;
     font-family: Outfit;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 .contactRight textarea{
@@ -99,6 +100,7 @@
     color: #a0a0a0;
     font-family: Outfit;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
 .contactSubmit{
@@ -150,9 +152,8 @@
 
     .contact{
         gap: 30px;
-        margin: 50px 40px;
+        margin: 50px 30px;
         align-items: start;
-
     }
 
     .contactTitle h1{
