@@ -9,9 +9,14 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
 
     const [state, handleSubmit] = useForm("xvgwzdjw");
-    if (state.succeeded) {
-        alert("Thanks for contacting me! I will get back to you soon.");
-    }
+    const [showSuccess, setShowSuccess] = React.useState(false);
+    
+    React.useEffect(() => {
+        if (state.succeeded) {
+            setShowSuccess(true);
+            setTimeout(() => setShowSuccess(false), 5000);
+        }
+    }, [state.succeeded]);
 
     return (
 
@@ -60,7 +65,14 @@ const Contact = () => {
                     <input type="email" id="email" placeholder='Enter Your Email' required name='email' />
                     <label htmlFor="message">Write Your Message Here</label>
                     <textarea id="message" rows="8" placeholder='Enter Your Message' required name='message'></textarea>
-                    <button className={styles.contactSubmit} type="submit">Submit Now</button>
+                    <button className={styles.contactSubmit} type="submit" disabled={state.submitting}>
+                        {state.submitting ? 'Sending...' : 'Submit Now'}
+                    </button>
+                    {showSuccess && (
+                        <div className={styles.successMessage}>
+                            ✓ Thanks for contacting me! I will get back to you soon.
+                        </div>
+                    )}
 
                 </form>
 

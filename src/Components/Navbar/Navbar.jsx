@@ -1,11 +1,10 @@
-import React, { useState }  from 'react'
+import React, { useState, useRef } from 'react'
 import styles from './Navbar.module.css'
 import logo from '../../assets/logo.png'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import menu_open from '../../assets/menu_open.svg'
 import menu_close from '../../assets/menu_close.svg'
-import { useRef } from 'react'
 
 export default function Navbar() {
 
@@ -25,7 +24,7 @@ export default function Navbar() {
 
     <div className={styles.navbar}>
 
-      <img src={logo} alt="" width={300} />
+      <img src={logo} alt="Ahmed Raza Portfolio Logo" width={300} />
 
       <img src={menu_open} onClick={openMenu} alt="menu open" className={styles.navMobOpen} />
 
