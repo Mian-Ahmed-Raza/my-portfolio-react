@@ -3,7 +3,6 @@ import styles from './Contact.module.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
-import call_icon from '../../assets/call_icon.svg'
 import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
@@ -44,13 +43,8 @@ const Contact = () => {
                         </div>
 
                         <div className={styles.contactDetail}>
-                            <img src={call_icon} alt="call icon" />
-                            <p>+923247932617</p>
-                        </div>
-
-                        <div className={styles.contactDetail}>
                             <img src={location_icon} alt="location icon" />
-                            <p>Lahore, Pakistan</p>
+                            <p>Munich, Germany</p>
                         </div>
 
                     </div>
