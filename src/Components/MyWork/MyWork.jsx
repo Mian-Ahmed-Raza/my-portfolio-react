@@ -22,7 +22,28 @@ const MyWork = () => {
 
             {mywork_data.map((work, index) => {
 
-                return <img key={index} src={work.w_img} alt={work.w_name} loading="lazy" />
+                return (
+                    <div key={index} className={styles.myworkCard}>
+                        <img src={work.w_img} alt={work.w_name} loading="lazy" />
+                        <div className={styles.myworkInfo}>
+                            <h3>{work.w_name}</h3>
+                            <p>{work.w_desc}</p>
+                            <div className={styles.myworkTech}>
+                                {work.w_tech.map((tech, i) => (
+                                    <span key={i} className={styles.techBadge}>{tech}</span>
+                                ))}
+                            </div>
+                            <div className={styles.myworkLinks}>
+                                <a href={work.w_demo} target="_blank" rel="noopener noreferrer" className={styles.demoBtn}>
+                                    View Demo
+                                </a>
+                                <a href={work.w_github} target="_blank" rel="noopener noreferrer" className={styles.githubBtn}>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                )
 
             })}
 
@@ -30,7 +51,7 @@ const MyWork = () => {
 
         <div className={styles.myworkShowmore}>
 
-            <p>Show More</p>
+            <p>View All Projects on GitHub</p>
             <img src={arrow_icon} alt="arrow icon" />
 
         </div>

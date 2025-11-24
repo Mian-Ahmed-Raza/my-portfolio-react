@@ -19,7 +19,21 @@ return (
 
                 <div className={styles.heroConnect}><AnchorLink className={styles.anchorLink} offset={50} href='#contact'>Connect with me</AnchorLink></div>
 
-                <div className={styles.heroResume} onClick={() => setShowResumeModal(true)}>My Resume</div>
+                <a 
+                    href="/Carry_Williams_Resume.pdf" 
+                    download="Carry_Williams_Resume.pdf"
+                    className={styles.heroResume}
+                    onClick={(e) => {
+                        // If PDF doesn't exist, show modal instead
+                        const pdfExists = true; // Set to false if no PDF uploaded yet
+                        if (!pdfExists) {
+                            e.preventDefault();
+                            setShowResumeModal(true);
+                        }
+                    }}
+                >
+                    Download Resume
+                </a>
 
             </div>
 

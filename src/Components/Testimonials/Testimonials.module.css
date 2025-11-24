@@ -1,0 +1,131 @@
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.testimonialsTitle{
+    position: relative;
+}
+
+.testimonialsTitle h1{
+    padding: 0 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.testimonialsTitle img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.testimonialsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+
+.testimonialCard{
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a1a2a 100%);
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid rgba(180, 21, 255, 0.3);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonialCard:hover{
+    border-color: #b415ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(180, 21, 255, 0.3);
+}
+
+.rating{
+    font-size: 20px;
+}
+
+.testimonialText{
+    font-size: 16px;
+    line-height: 28px;
+    color: #d8d8d8;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.clientInfo h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.clientInfo p{
+    font-size: 14px;
+    color: #b8b8b8;
+}
+
+@media(max-width:768px) and (min-width:481px){
+    .testimonials{
+        margin: 50px 70px;
+    }
+
+    .testimonialsContainer{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media(max-width:480px){
+
+    .testimonials{
+        gap: 30px;
+        margin: 50px 30px;
+        align-items: start;
+    }
+
+    .testimonialsTitle{
+        align-self: center;
+    }
+
+    .testimonialsTitle h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .testimonialsTitle img{
+        width: 130px;
+        margin-right: -20px;
+    }
+
+    .testimonialsContainer{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .testimonialCard{
+        padding: 25px;
+    }
+
+    .testimonialText{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .clientInfo h4{
+        font-size: 18px;
+    }
+
+    .clientInfo p{
+        font-size: 13px;
+    }
+
+}

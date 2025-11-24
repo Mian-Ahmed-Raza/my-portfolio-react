@@ -71,21 +71,21 @@ const About = () => {
         <div className={styles.aboutAchievements}>
 
             <div className={styles.aboutAchievement}>
-                <h1>2+</h1>
+                <h1>3</h1>
                 <p>Years of Experience</p>
             </div>
 
             <hr />
 
             <div className={styles.aboutAchievement}>
-                <h1>10+</h1>
+                <h1>24</h1>
                 <p>Projects Completed</p>
             </div>
 
             <hr />
 
             <div className={styles.aboutAchievement}>
-                <h1>15+</h1>
+                <h1>18</h1>
                 <p>Happy Clients</p>
             </div>
 

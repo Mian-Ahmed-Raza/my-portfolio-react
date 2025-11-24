@@ -51,6 +51,10 @@
     border-radius: 50px;
     border: 2px solid white;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 .heroConnect:hover{
