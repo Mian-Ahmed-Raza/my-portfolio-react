@@ -14,7 +14,7 @@ const MyWork = () => {
 
             <h1>My Latest Work</h1>
 
-            <img src={theme_pattern} alt="theme pattern" />
+            <img src={theme_pattern} alt="theme pattern" width={130} height={130} loading="lazy" />
 
         </div>
 
@@ -22,7 +22,7 @@ const MyWork = () => {
 
             {mywork_data.map((work, index) => {
 
-                return <img key={index} src={work.w_img} alt={work.w_name} />
+                return <img key={index} src={work.w_img} alt={work.w_name} loading="lazy" />
 
             })}
 

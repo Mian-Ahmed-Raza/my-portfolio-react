@@ -24,7 +24,7 @@ const Contact = () => {
             <div className={styles.contactTitle}>
 
                 <h1>Get in Touch</h1>
-                <img src={theme_pattern} alt="theme pattern" />
+                <img src={theme_pattern} alt="theme pattern" width={130} height={130} loading="lazy" />
 
             </div>
 

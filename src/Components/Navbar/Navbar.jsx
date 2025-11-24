@@ -24,7 +24,7 @@ export default function Navbar() {
 
     <div className={styles.navbar}>
 
-      <img src={logo} alt="Ahmed Raza Portfolio Logo" width={300} />
+      <img src={logo} alt="Ahmed Raza Portfolio Logo" width={300} height={80} loading="eager" />
 
       <img src={menu_open} onClick={openMenu} alt="menu open" className={styles.navMobOpen} />
 

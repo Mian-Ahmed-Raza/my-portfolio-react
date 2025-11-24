@@ -14,7 +14,7 @@ const About = () => {
 
             <h1>About Me</h1>
 
-            <img src={theme_pattern} alt="theme pattern" />
+            <img src={theme_pattern} alt="theme pattern" width={130} height={130} loading="lazy" />
 
         </div>
 
@@ -22,7 +22,7 @@ const About = () => {
 
             <div className={styles.aboutLeft}>
 
-                <img src={profilePic} alt="Profile" width={300} height={400} />
+                <img src={profilePic} alt="Profile" width={300} height={400} loading="lazy" />
 
             </div>
 

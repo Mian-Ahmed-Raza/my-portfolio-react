@@ -9,7 +9,7 @@ const [showResumeModal, setShowResumeModal] = useState(false);
 return (
     <div id='home' className={styles.hero}>
 
-            <img src={profilePic} alt="profile" width={300} height={300} />
+            <img src={profilePic} alt="profile" width={300} height={300} loading="eager" />
 
             <h1><span>I'm Carry Williams,</span> Full Stack Developer based in Germany</h1>
 
