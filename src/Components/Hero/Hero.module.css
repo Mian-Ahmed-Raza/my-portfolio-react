@@ -70,60 +70,76 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
     animation: fadeIn 0.3s ease-out;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 .modalContent{
-    background: #1a1a1a;
-    padding: 40px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a1a2a 100%);
+    padding: 50px 40px 40px 40px;
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 550px;
     width: 90%;
     position: relative;
     border: 2px solid #b415ff;
-    box-shadow: 0 10px 40px rgba(180, 21, 255, 0.3);
+    box-shadow: 0 20px 60px rgba(180, 21, 255, 0.4), 0 0 100px rgba(223, 137, 8, 0.2);
     animation: slideUp 0.3s ease-out;
+    margin: auto;
 }
 
 .modalClose{
     position: absolute;
     top: 15px;
     right: 20px;
-    background: none;
-    border: none;
+    background: rgba(180, 21, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
-    font-size: 32px;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     cursor: pointer;
     line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.3s;
 }
 
 .modalClose:hover{
-    color: #b415ff;
-    transform: rotate(90deg);
+    background: rgba(180, 21, 255, 0.4);
+    border-color: #b415ff;
+    color: white;
+    transform: rotate(90deg) scale(1.1);
 }
 
 .modalContent h2{
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 10px;
     background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
 }
 
 .modalContent p{
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     margin-bottom: 15px;
-    color: #d8d8d8;
+    color: #e8e8e8;
+    font-weight: 400;
 }
 
 .modalActions{
@@ -134,38 +150,42 @@
 
 .modalButton{
     flex: 1;
-    padding: 15px 30px;
+    padding: 16px 32px;
     border-radius: 50px;
     background: linear-gradient(270deg, #df8908 -5.09%, #b415ff 106.28%);
     border: none;
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(180, 21, 255, 0.3);
 }
 
 .modalButton:hover{
     transform: scale(1.05);
+    box-shadow: 0 6px 25px rgba(180, 21, 255, 0.5);
 }
 
 .modalButtonSecondary{
     flex: 1;
-    padding: 15px 30px;
+    padding: 16px 32px;
     border-radius: 50px;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .modalButtonSecondary:hover{
     border-color: #b415ff;
+    background: rgba(180, 21, 255, 0.1);
     transform: scale(1.05);
 }
 
