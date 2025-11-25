@@ -37,9 +37,6 @@ const MyWork = () => {
                                 <a href={work.w_demo} target="_blank" rel="noopener noreferrer" className={styles.demoBtn}>
                                     View Demo
                                 </a>
-                                <a href={work.w_github} target="_blank" rel="noopener noreferrer" className={styles.githubBtn}>
-                                    View Code
-                                </a>
                             </div>
                         </div>
                     </div>

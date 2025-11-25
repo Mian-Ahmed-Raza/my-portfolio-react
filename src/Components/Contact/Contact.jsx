@@ -9,11 +9,15 @@ const Contact = () => {
 
     const [state, handleSubmit] = useForm("xvgwzdjw");
     const [showSuccess, setShowSuccess] = React.useState(false);
+    const formRef = React.useRef(null);
     
     React.useEffect(() => {
         if (state.succeeded) {
             setShowSuccess(true);
-            setTimeout(() => setShowSuccess(false), 5000);
+            if (formRef.current) {
+                formRef.current.reset();
+            }
+            setTimeout(() => setShowSuccess(false), 8000);
         }
     }, [state.succeeded]);
 
@@ -39,7 +43,7 @@ const Contact = () => {
 
                         <div className={styles.contactDetail}>
                             <img src={mail_icon} alt="mail icon" />
-                            <p>ahmedmian026@gmail.com</p>
+                            <p>carrywilliamsorg@gmail.com</p>
                         </div>
 
                         <div className={styles.contactDetail}>
@@ -51,7 +55,16 @@ const Contact = () => {
 
                 </div>
 
-                <form onSubmit={handleSubmit} className={styles.contactRight} method='POST'>
+                <form ref={formRef} onSubmit={handleSubmit} className={styles.contactRight} method='POST'>
+                    {showSuccess && (
+                        <div className={styles.successMessage}>
+                            <span className={styles.successIcon}>✓</span>
+                            <div>
+                                <strong>Message Sent Successfully!</strong>
+                                <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                            </div>
+                        </div>
+                    )}
 
                     <label htmlFor="name">Your Name</label>
                     <input type="text" id="name" placeholder='Your Name' required name='name' />
@@ -62,11 +75,6 @@ const Contact = () => {
                     <button className={styles.contactSubmit} type="submit" disabled={state.submitting}>
                         {state.submitting ? 'Sending...' : 'Submit Now'}
                     </button>
-                    {showSuccess && (
-                        <div className={styles.successMessage}>
-                            ✓ Thanks for contacting me! I will get back to you soon.
-                        </div>
-                    )}
 
                 </form>
 

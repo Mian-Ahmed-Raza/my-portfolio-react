@@ -127,23 +127,54 @@
 }
 
 .successMessage{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
     color: #4ade80;
-    background: rgba(74, 222, 128, 0.1);
-    border: 1px solid #4ade80;
-    padding: 15px 20px;
-    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(74, 222, 128, 0.15) 0%, rgba(74, 222, 128, 0.08) 100%);
+    border: 2px solid #4ade80;
+    padding: 20px 25px;
+    border-radius: 12px;
     font-size: 18px;
-    margin-top: 10px;
-    animation: slideIn 0.3s ease-out;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: slideInBounce 0.5s ease-out;
+    box-shadow: 0 4px 20px rgba(74, 222, 128, 0.2);
 }
 
-@keyframes slideIn {
-    from {
+.successMessage strong{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.successMessage p{
+    margin: 0;
+    color: #86efac;
+    font-size: 16px;
+}
+
+.successIcon{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes slideInBounce {
+    0% {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateY(-30px);
     }
-    to {
+    60% {
         opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
         transform: translateY(0);
     }
 }
@@ -228,6 +259,24 @@
         font-size: 20px;
         padding: 15px 40px;
         margin-bottom: 0px;
+    }
+
+    .successMessage{
+        flex-direction: row;
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .successMessage strong{
+        font-size: 18px;
+    }
+
+    .successMessage p{
+        font-size: 14px;
+    }
+
+    .successIcon{
+        font-size: 28px;
     }
 
 }
