@@ -38,7 +38,7 @@ const mywork_data = [
         w_name:"Netlfix Website Home Page Replica",
         w_desc:"A responsive front-end replica of the Netflix website home page built with HTML, CSS, and JavaScript, focusing on clean UI and modern design",
         w_tech:["React", "Node.js", "PostgreSQL", "Chart.js", "TypeScript"],
-        w_demo:"https://netflix-clone-front-end-only.vercel.app/",
+        w_demo:"https://netflix-clone-front-end-only-git-main-mian-ahmeds-projects.vercel.app/",
         w_github:"https://github.com/carry-williams/healthtrack",
         w_img:project4_img
     },
