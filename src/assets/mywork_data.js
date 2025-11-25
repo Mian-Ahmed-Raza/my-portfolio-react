@@ -2,8 +2,8 @@ import project1_img from '../assets/project_1.jpg'
 import project2_img from '../assets/project_2.png'
 import project3_img from '../assets/project_3.png'
 import project4_img from '../assets/project_4.png'
-import project5_img from '../assets/project_5.svg'
-import project6_img from '../assets/project_6.svg'
+import project5_img from '../assets/project_5.png'
+import project6_img from '../assets/project_6.png'
 
 const mywork_data = [
     {
@@ -44,19 +44,19 @@ const mywork_data = [
     },
     {
         w_no:5,
-        w_name:"CodeShare - Developer Community",
+        w_name:"Professional Portfolio Website",
         w_desc:"Social platform for developers to share code snippets, collaborate, and learn together with syntax highlighting",
         w_tech:["Next.js", "GraphQL", "MongoDB", "Redis", "Docker"],
-        w_demo:"https://codeshare-dev.vercel.app",
+        w_demo:"https://my-portfolio-react-liart.vercel.app/",
         w_github:"https://github.com/carry-williams/codeshare",
         w_img:project5_img
     },
     {
         w_no:6,
-        w_name:"FinanceTracker - Budget Management",
-        w_desc:"Personal finance management tool with expense tracking, budget planning, and financial insights",
+        w_name:"Gaming Store and Coaching Platform",
+        w_desc:"A gaming institute/platform that helps people become professional gamers and monetize their gaming skills",
         w_tech:["React", "Express", "PostgreSQL", "Plaid API", "AWS"],
-        w_demo:"https://financetracker-demo.netlify.app",
+        w_demo:"https://gaming-site-rust.vercel.app/",
         w_github:"https://github.com/carry-williams/financetracker",
         w_img:project6_img
     },
